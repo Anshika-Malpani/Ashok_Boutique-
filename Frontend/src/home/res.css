@@ -1,0 +1,436 @@
+@media(max-width:1200px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        width: 43%;
+        position: relative;
+       right: 28%;
+    }
+
+    #logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        background-color: transparent;
+    }
+    .nav-right{
+        width: 30vw;
+        height: 6vh;
+        margin: 2.5vw;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .h-nav {
+        width: 100%;
+        height: 8vh;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+
+
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+
+    .right {
+        width: 100%;
+        height: 55vh;
+        padding-top: 16vw;
+    }
+
+    .left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0vw 0px;
+    }
+
+    .content {
+        margin-left: 0vw;
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content h1 {
+        color: #574848;
+        font-family: 'Alice', serif;
+        font-size: 11vw;
+        margin: 12px;
+    }
+
+    .content h3 {
+        color: #706b6b;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.7vw;
+        font-weight: 900;
+        line-height: 113%;
+        margin: 8px;
+    }
+
+    .btn {
+        padding: 18px;
+        margin-right: 5vw;
+        margin-top: 2.5vw;
+    }
+
+    h5 {
+
+        font-size: 5.5vw;
+        bottom: 14%;
+
+    }
+
+    .fimages {
+        flex-direction: column-reverse;
+        /* background-color: #574848; */
+        padding: 0 5vw;
+    }
+
+    .fright {
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+
+    }
+
+    .images {
+        width: 100%;
+        height: 100%;
+        margin-top: 26vw;
+    }
+
+    .fleft {
+        width: 100%;
+        height: 30%;
+        /* border: 2px solid black; */
+        margin-top: 15vw;
+
+
+    }
+
+    .fleftelem {
+        width: 100%;
+        height: 100%;
+        margin-top: 10vw;
+
+    }
+
+    .fleftelem h3 {
+        font-size: 7.5vw;
+    }
+
+    .fleftelem h1 {
+        font-size: 8.7vw;
+        line-height: 1;
+        margin: 1vw 0;
+        font-family: 'Alice', serif;
+        font-weight: 600;
+        color: #574848;
+    }
+
+    .review {
+        background-color: "#F7F8FC";
+        height: 100vh;
+    }
+
+    .head {
+        height: 10vw;
+        font-size: 4.5vw;
+    }
+
+    .review-box {
+        width: 100%;
+        height: 90vh;
+        /* background-color: #7c7070; */
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* align-items: center; */
+        justify-content: center;
+        overflow-y: auto;
+
+        /* margin-left: 1.2vw; */
+    }
+
+    .box {
+        min-width: 91%;
+        height: 37vh;
+        background-color: #d6bfbe;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        /* margin: 0vw 2vw; */
+        scale: 0.9;
+    }
+
+    .rev-des {
+        width: 100%;
+        height: 50%;
+        font-size: 5.5vw
+            /* margin-top: 0.6vw; */
+    }
+
+    .cust-des {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0vw 0vw;
+        margin-top: 5vw;
+    }
+    .btn-lg {
+        margin: 8px;
+        font-weight: 600;
+        font-size: 4.5vw;
+       
+    }
+
+    .cust-des img {
+        width: 20%;
+        height: 61%;
+    }
+
+    .rev-title {
+        font-size: 5.5vw;
+    }
+
+    .page4-head {
+        height: 22vw;
+        /* text-align: center; */
+        padding-top: 2vw;
+        font-size: 4vw;
+        margin-left: 2.5vw;
+        margin-right: 0vw;
+        align-items: center;
+    }
+
+    .page4-head .btn {
+        padding: 0px 10px;
+        margin-right: 5vw;
+        margin-top: 0vw;
+        font-size: 4.5vw;
+        width: 39%;
+        height: 60%;
+    }
+
+    .describe img {
+        width: 66%;
+        height: 34%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 7vw;
+    }
+
+    .describe h3 {
+        font-size: 8vw;
+        margin-top: 5vw;
+        text-align: center;
+        padding: 0 5vw;
+    }
+
+    .describe h6 {
+        font-size: 4.8vw;
+        color: #706b6b;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 1.5vw;
+    }
+
+    .achieve {
+        width: 100%;
+        height: 22vh;
+        /* background-color: #574848; */
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 7vw;
+
+    }
+
+    .achieve h4 {
+        margin: 2vw 8vw;
+        font-size: 5.5vw;
+        font-weight: 700;
+        color: #706b6b;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .footer {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .box1 {
+        width: 90%;
+        height: 85%;
+
+    }
+
+    .box1 p {
+        font-size: 3.3vw;
+    }
+
+    .nav-items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h3 {
+        font-size: 4vw;
+        font-weight: 700;
+        text-align: justify;
+        text-transform: uppercase;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .box4 {
+        width: 100%;
+    }
+
+    .copyright {
+        width: 100%;
+        height: 10vh;
+        background-color: #af9191;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright h3 {
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 0 10vw;
+    }
+
+    .fixedimg {
+        width: 90%;
+        height: 70%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        pointer-events: none;
+        opacity: 1;
+        display: block;
+        /* background-color: #574848; */
+        position: static;
+       margin-top: 2vw;
+    }
+
+    .fixedimg>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .elemup {
+       display: none;
+    }
+    .page3 {
+        width: 100vw;
+        height: 370vh;
+        /* background-color: #574848; */
+        margin-top: 3vw;
+    }
+    .heading-page3{
+        font-size: 7vw;
+        color: #574848;
+        font-family: 'Alice', serif;
+        padding-bottom: 2vw;
+        border-bottom: 2px solid #cfcbcb;
+        width: 90%;
+        margin: 0px auto ;
+        margin-bottom: 5vw;
+    }
+    .elems {
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .elem {
+        width: 100%;
+        height: 60vh;
+        /* background-color: #af9191; */
+        border-bottom: 0px solid #cfcbcb;
+        display: flex;
+        align-items: center;
+        padding: 0vw;
+        position: relative;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    .elemdets {
+        width: 100%;
+        height: 60vh;
+         position: static; 
+         z-index: 9;
+        /* background-color: rgb(153, 153, 212); */
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        color: #574848;
+    }
+    .elem h1 {
+        font-size: 9.5vw;
+        font-family: 'Mukta', sans-serif;
+        position: static;
+        z-index: 9;
+        text-align: left;
+        width: 90%;
+        /* background-color: aliceblue; */
+        /* margin-top: -5vw; */
+    }
+    .rightelem{
+        width: 90%;
+        /* background-color: #cfcbcb; */
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10vw;
+    }
+    .rightelem h3 {
+        font-size: 5.2vw;
+        text-align: left;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+}
