@@ -81,7 +81,7 @@ const Navbar = () => {
       <nav className="navbar h-nav">
         <div className="container">
           <div id="logo" className="logo-nav">
-            <img src={"/src/assets/home_images/logo-transparent-png.webp"} alt="Ashok Boutique Logo" />
+            <img src={" home_images/logo-transparent-png.webp"} alt="Ashok Boutique Logo" />
           </div>
           <ul className="list v-class">
             {navItems.map((item) => (

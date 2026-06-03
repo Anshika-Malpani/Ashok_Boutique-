@@ -22,37 +22,37 @@ const Home = () => {
       title: "Elegance Era",
       type: "BLOUSES",
       price: "₹500",
-      img: "/src/assets/home_images/blouse.jpeg"
+      img: " home_images/blouse.jpeg"
     },
     {
       title: "Ethnic Essence",
       type: "KURTIS",
       price: "₹700",
-      img: "/src/assets/home_images/Kurti.jpg",
+      img: " home_images/Kurti.jpg",
     },
     {
       title: "Occasion Outfits",
       type: "LEHENGA",
       price: "₹1500",
-      img: "/src/assets/home_images/Lehenga.jpeg",
+      img: " home_images/Lehenga.jpeg",
     },
     {
       title: "Fusion Fashion",
       type: "INDO WESTERN",
       price: "₹1500-2000",
-      img: "/src/assets/home_images/indo.jpeg",
+      img: " home_images/indo.jpeg",
     },
     {
       title: "Trendy Threads",
       type: "CORSETS",
       price: "₹1500",
-      img: "/src/assets/home_images/corset.avif",
+      img: " home_images/corset.avif",
     },
     {
       title: "Dressing Delight",
       type: "GOWN",
       price: "₹1500",
-      img: "/src/assets/home_images/gown.webp",
+      img: " home_images/gown.webp",
     },
   ];
 
@@ -184,7 +184,7 @@ const Home = () => {
             </div>
           </div>
           <div className="right">
-            <img src={"/src/assets/home_images/giphy (1).gif"} alt="Boutique preview" />
+            <img src={" home_images/giphy (1).gif"} alt="Boutique preview" />
           </div>
           <h5 className="font-extrabold flex items-center gap-2">
             Scroll Down
@@ -261,7 +261,7 @@ const Home = () => {
             <button className="btn">Know More</button>
           </div>
           <div className="describe">
-            <img className="owner" src={"/src/assets/home_images/owner.webp"} alt="Owner" />
+            <img className="owner" src={" home_images/owner.webp"} alt="Owner" />
             <h3>Sushila Malpani & Ashok Malpani</h3>
             <h6>Owner | Ashok Boutique</h6>
             <div className="achieve">
@@ -274,7 +274,7 @@ const Home = () => {
         
         <div className="footer">
           <div className="box1">
-            <img src="/src/assets/home_images/logo-transparent-png.webp" alt="logo" />
+            <img src="home_images/logo-transparent-png.webp" alt="logo" />
             <p>Elevate Your Everyday with Our Timeless Designs</p>
           </div>
           <div className="box2">
