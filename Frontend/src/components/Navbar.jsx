@@ -92,7 +92,7 @@ const Navbar = () => {
               setIsMenuOpen(false);
             }}
           >
-            <img src={" home_images/logo-transparent-png.webp"} alt="Ashok Boutique Logo" />
+            <img src="/home_images/logo-transparent-png.webp" alt="Ashok Boutique Logo" />
           </NavLink>
 
           <button
