@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const headingRef = useRef(null);
-  const [activeImage, setActiveImage] = useState("");
+  const [activeImage, setActiveImage] = useState(" home_images/blouse.jpeg");
   const [showPreview, setShowPreview] = useState(false);
   
 
@@ -80,25 +80,14 @@ const Home = () => {
 
     const tl = gsap.timeline();
 
-    tl.from("#logo", {
-      y: -80,
+    tl.from(".content h1, .content h3, .content .btn", {
+      y: 40,
       opacity: 0,
+      stagger: 0.15,
+      ease: "power3.out",
       duration: 0.8,
-      ease: "power3.out",
+      clearProps: "transform,opacity",
     })
-    .from(".list li", {
-      y: -80,
-      opacity: 0,
-      stagger: 0.1,
-      duration: 0.6,
-      ease: "power3.out",
-    }, "-=0.5")
-    .from(".nav-right", {
-      y: -80,
-      opacity: 0,
-      duration: 0.6,
-      ease: "power3.out",
-    }, "-=0.5")
 
     // Hero content
     
@@ -167,7 +156,7 @@ const Home = () => {
       // your animations here
     });
   
-    return () => ctx.revert(); // 🔥 important
+    return () => ctx.revert(); 
   }, []);
 
   return (
@@ -178,7 +167,7 @@ const Home = () => {
         <section className="hero">
           <div className="left">
             <div className="content">
-              <h1 className="heading" ref={headingRef}></h1>
+            <h1 className="heading" ref={headingRef}></h1>
               <h3 className="tagline font-extrabold">Elevate Your Everyday with Our Timeless Designs</h3>
               <button className="btn"><NavLink to="/designs">Explore Now</NavLink></button>
             </div>
@@ -186,7 +175,7 @@ const Home = () => {
           <div className="right">
             <img src={" home_images/giphy (1).gif"} alt="Boutique preview" />
           </div>
-          <h5 className="font-extrabold flex items-center gap-2">
+          <h5 className="hidden  font-extrabold md:flex items-center gap-2">
             Scroll Down
            <ArrowDown size={20}strokeWidth={4} />
           </h5>
@@ -213,7 +202,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="elems  font-extrabold relative"
+        <div className="elems featured-section font-extrabold relative"
         onMouseEnter={() => isLaptopScreen() && setShowPreview(true)}
        onMouseLeave={() => isLaptopScreen() && setShowPreview(false)}
     >
@@ -231,13 +220,13 @@ const Home = () => {
     
        
 
-     <div className="elems"></div>
       {items.map((item, index) => (
         <div
           key={index}
           className="elem"
           onMouseEnter={() => isLaptopScreen() && setActiveImage(item.img)}
         >
+          <img className="elem-thumb" src={item.img} alt={`${item.title} design`} />
           <div className="elemup"></div>
 
           <div className="elemdets">
@@ -257,8 +246,10 @@ const Home = () => {
 
         <div className="page4">
           <div className="page4-head font-extrabold">
-            <h1>Meet The Owner</h1>
+            <h1 className="text-4xl font-bold">Meet The Owner</h1>
+           <NavLink to="/contact">
             <button className="btn">Know More</button>
+           </NavLink>
           </div>
           <div className="describe">
             <img className="owner" src={" home_images/owner.webp"} alt="Owner" />

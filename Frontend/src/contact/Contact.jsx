@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 const Contact = () => {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -112,16 +110,16 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-22">
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-20 sm:pt-24">
         {/* Hero Section */}
        
-        <div className="max-w-7xl mx-auto px-4 py-12 md:py-16">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           {/* Contact Info Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:mb-16 lg:grid-cols-4 lg:gap-6">
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+                className="group bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:p-6"
               >
                 <div className="w-14 h-14 bg-gradient-to-br from-[#dccbce] to-[#ceb7bb] rounded-xl flex items-center justify-center mb-4 text-[#574848] group-hover:scale-110 transition-transform duration-300">
                   {info.icon}
@@ -129,7 +127,7 @@ const Contact = () => {
                 <h3 className="text-lg font-bold text-[#574848] mb-2">{info.title}</h3>
                 <div className="space-y-1">
                   {info.details.map((detail, idx) => (
-                    <p key={idx} className="text-sm text-gray-600">
+                    <p key={idx} className="break-words text-sm leading-6 text-gray-600">
                       {detail}
                     </p>
                   ))}
@@ -150,16 +148,16 @@ const Contact = () => {
           </div>
 
           {/* Contact Form & Map Section */}
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
             {/* Contact Form */}
-            <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-              <div className="bg-gradient-to-r from-[#574848] to-[#463838] px-8 py-6">
-                <h2 className="text-2xl font-bold text-white">Send us a Message</h2>
+            <div className="overflow-hidden rounded-2xl bg-white shadow-xl sm:rounded-3xl">
+              <div className="bg-gradient-to-r from-[#574848] to-[#463838] px-5 py-5 sm:px-8 sm:py-6">
+                <h2 className="text-xl font-bold text-white sm:text-2xl">Send us a Message</h2>
                 <p className="text-gray-200 text-sm mt-1">Fill out the form and we'll get back to you within 24 hours</p>
               </div>
               
-              <form onSubmit={handleSubmit} className="p-8 space-y-5">
-                <div className="grid md:grid-cols-2 gap-5">
+              <form onSubmit={handleSubmit} className="space-y-5 p-5 sm:p-8">
+                <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="block text-sm font-semibold text-[#574848] mb-2">
                       Your Name *
@@ -190,7 +188,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-5">
+                <div className="grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="block text-sm font-semibold text-[#574848] mb-2">
                       Phone Number
@@ -236,11 +234,11 @@ const Contact = () => {
                 </div>
 
                 {submitStatus === "success" && (
-                  <div className="bg-green-50 border border-green-200 rounded-xl p-3 text-green-700 text-sm flex items-center gap-2 animate-fade-in">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-start gap-2 rounded-xl border border-green-200 bg-green-50 p-3 text-sm text-green-700 animate-fade-in">
+                    <svg className="mt-0.5 h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    Message sent successfully! We'll contact you soon.
+                    <span>Message sent successfully! We'll contact you soon.</span>
                   </div>
                 )}
 
@@ -273,14 +271,14 @@ const Contact = () => {
             </div>
 
             {/* Map & Social Section */}
-            <div className="space-y-8">
+            <div className="space-y-6 lg:space-y-8">
               {/* Map */}
-              <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
-                <div className="bg-gradient-to-r from-[#574848] to-[#463838] px-8 py-6">
-                  <h2 className="text-2xl font-bold text-white">Find Us Here</h2>
+              <div className="overflow-hidden rounded-2xl bg-white shadow-xl sm:rounded-3xl">
+                <div className="bg-gradient-to-r from-[#574848] to-[#463838] px-5 py-5 sm:px-8 sm:py-6">
+                  <h2 className="text-xl font-bold text-white sm:text-2xl">Find Us Here</h2>
                   <p className="text-gray-200 text-sm mt-1">Visit our design studio</p>
                 </div>
-                <div className="h-[300px] w-full bg-gray-100">
+                <div className="h-[260px] w-full bg-gray-100 sm:h-[320px] lg:h-[360px]">
                   <iframe
                     title="Studio Location"
                     src="https://www.google.com/maps?q=26.9592392,75.7781506&hl=es;z=14&output=embed"
@@ -295,10 +293,10 @@ const Contact = () => {
               </div>
 
               {/* Social Links */}
-              <div className="bg-white rounded-3xl shadow-xl p-8">
-                <h2 className="text-2xl font-bold text-[#574848] mb-4">Connect With Us</h2>
+              <div className="rounded-2xl bg-white p-5 shadow-xl sm:rounded-3xl sm:p-8">
+                <h2 className="mb-3 text-xl font-bold text-[#574848] sm:mb-4 sm:text-2xl">Connect With Us</h2>
                 <p className="text-gray-600 mb-6">Follow us on social media for daily design inspiration</p>
-                <div className="flex gap-4">
+                <div className="flex flex-wrap gap-4">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
@@ -315,13 +313,13 @@ const Contact = () => {
                 {/* Newsletter */}
                 <div className="mt-8 pt-8 border-t border-gray-100">
                   <h3 className="text-lg font-semibold text-[#574848] mb-3">Subscribe to our Newsletter</h3>
-                  <div className="flex gap-3">
+                  <div className="flex flex-col gap-3 sm:flex-row">
                     <input
                       type="email"
                       placeholder="Your email address"
-                      className="flex-1 px-4 py-2 rounded-xl border border-gray-200 focus:border-[#dccbce] focus:outline-none"
+                      className="min-w-0 flex-1 rounded-xl border border-gray-200 px-4 py-2 focus:border-[#dccbce] focus:outline-none"
                     />
-                    <button className="px-6 py-2 bg-gradient-to-r from-[#574848] to-[#463838] text-white rounded-xl font-semibold hover:shadow-lg transition-all">
+                    <button className="rounded-xl bg-gradient-to-r from-[#574848] to-[#463838] px-6 py-2 font-semibold text-white transition-all hover:shadow-lg sm:w-auto">
                       Subscribe
                     </button>
                   </div>
@@ -332,25 +330,25 @@ const Contact = () => {
           </div>
 
           {/* FAQ Section */}
-          <div className="mt-16">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-[#574848] mb-3">Frequently Asked Questions</h2>
+          <div className="mt-12 lg:mt-16">
+            <div className="mb-8 text-center sm:mb-10">
+              <h2 className="mb-3 text-2xl font-bold text-[#574848] sm:text-3xl">Frequently Asked Questions</h2>
               <p className="text-gray-600">Quick answers to common questions</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+            <div className="grid gap-4 md:grid-cols-2 lg:gap-6">
+              <div className="rounded-2xl bg-white p-5 shadow-md transition-shadow hover:shadow-lg sm:p-6">
                 <h3 className="text-lg font-semibold text-[#574848] mb-2">How long does a design project take?</h3>
                 <p className="text-gray-600 text-sm">Timeline varies based on project complexity. Typically 2-4 weeks for complete design delivery.</p>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="rounded-2xl bg-white p-5 shadow-md transition-shadow hover:shadow-lg sm:p-6">
                 <h3 className="text-lg font-semibold text-[#574848] mb-2">Do you offer customization?</h3>
                 <p className="text-gray-600 text-sm">Yes, all our designs can be customized to match your specific requirements and preferences.</p>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="rounded-2xl bg-white p-5 shadow-md transition-shadow hover:shadow-lg sm:p-6">
                 <h3 className="text-lg font-semibold text-[#574848] mb-2">What is your pricing structure?</h3>
                 <p className="text-gray-600 text-sm">Pricing depends on design complexity and requirements. Contact us for a custom quote.</p>
               </div>
-              <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="rounded-2xl bg-white p-5 shadow-md transition-shadow hover:shadow-lg sm:p-6">
                 <h3 className="text-lg font-semibold text-[#574848] mb-2">Do you provide revisions?</h3>
                 <p className="text-gray-600 text-sm">Yes, we offer up to 3 rounds of revisions to ensure you're completely satisfied with the design.</p>
               </div>
